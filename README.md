@@ -8,6 +8,29 @@ Làm sao để ứng dụng agent an toàn hơn?
 
 ---
 
+## Thông tin sinh viên
+
+- **Họ tên:** Nguyễn Minh Thu
+- **MSSV:** 2A202601631
+
+## Cách chạy
+
+```powershell
+cd src
+python main.py --part 2   # guardrails
+python main.py --part 3   # testing/comparison
+python main.py --part 4   # HITL
+python main.py --part 5   # ghi outputs/results.json, audit_log.json, metrics.json
+python main.py --part 1   # attacks -> outputs/*_attack_result.json, attack_results.json
+cd ..
+pytest tests/smoke -q
+pytest tests/public -q
+```
+
+Báo cáo: [`report/2A202601631_report.md`](report/2A202601631_report.md)
+
+---
+
 ## Cài đặt môi trường (làm trước)
 
 ```powershell
